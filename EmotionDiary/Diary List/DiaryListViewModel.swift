@@ -15,6 +15,7 @@ final class DiaryListViewModel: ObservableObject {
     init() {
         self.dic = Dictionary(grouping: self.list, by: { $0.monthlyIdentifier })
     }
+    
     var keys: [String] {
         return dic.keys.sorted { $0 < $1 }
     }
