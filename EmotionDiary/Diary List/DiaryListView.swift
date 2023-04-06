@@ -61,15 +61,12 @@ struct DiaryListView: View {
             .navigationTitle("Emotion Diary")
         }
         .sheet(isPresented: $isPresenting) {
-            let vm = DiaryViewModel(isPresented: $isPresenting)
+            let vm = DiaryViewModel(isPresented: $isPresenting, diaries: $vm.list)
             DiaryDateInputView(vm: vm)
         }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        DiaryListView(vm: DiaryListViewModel())
+        .onAppear() {
+            
+        }
     }
 }
 
@@ -90,5 +87,12 @@ extension DiaryListView {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMMM yyyy"
         return formatter.string(from: date)
+    }
+}
+
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        DiaryListView(vm: DiaryListViewModel(storage: MoodDiaryStorage()))
     }
 }
