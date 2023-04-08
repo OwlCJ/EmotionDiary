@@ -20,14 +20,13 @@ final class DiaryViewModel: ObservableObject {
     
     var subscriptions = Set<AnyCancellable>()
     
-    init(isPresented Binding<Bool>, diaries: Binding<[MoodDiary]>) {
+    init(isPresented: Binding<Bool>, diaries: Binding<[MoodDiary]>) {
         self.isPresented = isPresented
         self.diaries = diaries
         
         $date.sink { date in
             print("--> selected: \(date)")
             self.update(date: date)
-            
         }.store(in: &subscriptions)
         
         $mood.sink { mood in
@@ -58,7 +57,8 @@ final class DiaryViewModel: ObservableObject {
     func completed() {
         guard diary.date.isEmpty == false else { return }
         
-        print("전체 리스트 추가하기")
+        diaries.wrappedValue.append(diary)
+        
         isPresented.wrappedValue = false
     }
 }

@@ -10,6 +10,7 @@
 		7186466129DD537300518AAD /* MoodDiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7186466029DD537300518AAD /* MoodDiaryCell.swift */; };
 		7186466329DD591C00518AAD /* DiaryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7186466229DD591C00518AAD /* DiaryListViewModel.swift */; };
 		7186466529DE91CC00518AAD /* DiaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7186466429DE91CC00518AAD /* DiaryViewModel.swift */; };
+		71B0217F29DFE5970023D8D4 /* DiaryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B0217E29DFE5970023D8D4 /* DiaryDetailsViewModel.swift */; };
 		948F9013287008D100F90257 /* EmotionDiaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948F9012287008D100F90257 /* EmotionDiaryApp.swift */; };
 		948F9015287008D100F90257 /* DiaryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948F9014287008D100F90257 /* DiaryListView.swift */; };
 		948F9017287008D200F90257 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 948F9016287008D200F90257 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		7186466029DD537300518AAD /* MoodDiaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDiaryCell.swift; sourceTree = "<group>"; };
 		7186466229DD591C00518AAD /* DiaryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryListViewModel.swift; sourceTree = "<group>"; };
 		7186466429DE91CC00518AAD /* DiaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewModel.swift; sourceTree = "<group>"; };
+		71B0217E29DFE5970023D8D4 /* DiaryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryDetailsViewModel.swift; sourceTree = "<group>"; };
 		948F900F287008D100F90257 /* EmotionDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotionDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		948F9012287008D100F90257 /* EmotionDiaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionDiaryApp.swift; sourceTree = "<group>"; };
 		948F9014287008D100F90257 /* DiaryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryListView.swift; sourceTree = "<group>"; };
@@ -156,8 +158,8 @@
 		948F9049287009E500F90257 /* Diary List */ = {
 			isa = PBXGroup;
 			children = (
-				948F9014287008D100F90257 /* DiaryListView.swift */,
 				7186466229DD591C00518AAD /* DiaryListViewModel.swift */,
+				948F9014287008D100F90257 /* DiaryListView.swift */,
 				7186466029DD537300518AAD /* MoodDiaryCell.swift */,
 			);
 			path = "Diary List";
@@ -177,6 +179,7 @@
 		948F904B287009FF00F90257 /* Diary Details */ = {
 			isa = PBXGroup;
 			children = (
+				71B0217E29DFE5970023D8D4 /* DiaryDetailsViewModel.swift */,
 				948F9047287009DA00F90257 /* DiaryDetailsView.swift */,
 			);
 			path = "Diary Details";
@@ -337,6 +340,7 @@
 				948F905528700A8800F90257 /* MoodDiaryStorage.swift in Sources */,
 				948F9044287009C000F90257 /* DiaryMoodInputView.swift in Sources */,
 				948F9048287009DA00F90257 /* DiaryDetailsView.swift in Sources */,
+				71B0217F29DFE5970023D8D4 /* DiaryDetailsViewModel.swift in Sources */,
 				948F904F28700A2C00F90257 /* Mood.swift in Sources */,
 				948F905428700A8800F90257 /* Storage.swift in Sources */,
 				7186466329DD591C00518AAD /* DiaryListViewModel.swift in Sources */,
